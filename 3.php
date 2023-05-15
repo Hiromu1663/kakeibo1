@@ -28,6 +28,7 @@ if (!empty($_POST)) {
 $database = new Database();
 $money = $database->find((int)$_GET["id"]);
 
+
 if (empty($money)) {
     header("Location: ./2.php");
     exit;
